@@ -127,7 +127,7 @@ export default function App() {
 							<input
 								id="ingredients"
 								type="text"
-								placeholder="Ví dụ: thịt gà, hành tây, cà rốt, gạo..."
+								placeholder="Ví dụ: thit ga, trung, hanh, ..."
 								value={ingredients}
 								onChange={e => setIngredients(e.target.value)}
 								className="border-2 border-gray-200 p-6 pl-14 w-full rounded-2xl focus:ring-4 focus:ring-orange-200 focus:border-orange-400 outline-none transition-all duration-300 text-lg group-hover:border-orange-300 bg-gray-50/50"
