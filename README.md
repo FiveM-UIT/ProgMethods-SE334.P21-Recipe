@@ -19,7 +19,7 @@ Trước khi bắt đầu, hãy đảm bảo bạn đã cài đặt:
 ### 2. Clone dự án
 
 ```bash
-git clone https://github.com/Shiengg/Cinema-Booking.git
+git clone https://github.com/FiveM-UIT/ProgMethods-SE334.P21-Recipe.git
 cd Cinema-Booking
 ```
 
