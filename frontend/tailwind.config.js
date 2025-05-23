@@ -1,9 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const defaultConfig = require('tailwindcss/defaultConfig')
-
-module.exports = {
-	...defaultConfig,
-	darkMode: ['class'],
+export default {
 	content: [
 		'./index.html',
 		'./src/**/*.{js,ts,jsx,tsx}',
@@ -12,11 +8,8 @@ module.exports = {
 		'components/**/*.{ts,tsx}'
 	],
 	theme: {
-		...defaultConfig.theme,
 		extend: {
-			...defaultConfig.theme.extend,
 			colors: {
-				...defaultConfig.theme.extend.colors,
 				amber: {
 					50: '#fffbeb',
 					100: '#fef3c7',
@@ -68,8 +61,24 @@ module.exports = {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
-			}
+			},
+			animation: {
+				'bounce': 'bounce 1s infinite',
+				'pulse': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+				'bounce-slow': 'bounce 3s linear infinite',
+				'pulse-slow': 'pulse 3s linear infinite',
+			},
+			keyframes: {
+				shake: {
+					'0%, 100%': { transform: 'translateX(0)' },
+					'25%': { transform: 'translateX(-5px)' },
+					'75%': { transform: 'translateX(5px)' },
+				}
+			},
+			boxShadow: {
+				'3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
+			},
 		}
 	},
-	plugins: [...defaultConfig.plugins, require('tailwindcss-animate')]
+	plugins: [require('tailwindcss-animate')]
 }

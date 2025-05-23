@@ -6,7 +6,7 @@ const port = 3001
 
 app.use(bodyParser.json())
 app.use((req, res, next) => {
-	res.header('Access-Control-Allow-Origin', 'http://localhost:3000')
+	res.header('Access-Control-Allow-Origin', '*')  // Allow all origins in development
 	res.header(
 		'Access-Control-Allow-Headers',
 		'Origin, X-Requested-With, Content-Type, Accept'
@@ -35,6 +35,6 @@ app.post('/suggest', (req, res) => {
 	})
 })
 
-app.listen(port, () => {
-	console.log(`Server running on http://localhost:${port}`)
+app.listen(port, '0.0.0.0', () => {
+	console.log(`Server running on http://0.0.0.0:${port}`)
 })
