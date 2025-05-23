@@ -20,7 +20,7 @@ Trước khi bắt đầu, hãy đảm bảo bạn đã cài đặt:
 
 ```bash
 git clone https://github.com/FiveM-UIT/ProgMethods-SE334.P21-Recipe.git
-cd Cinema-Booking
+cd ProgMethods-SE334.P21-Recipe
 ```
 
 ### 3. Khởi động hệ thống
